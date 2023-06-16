@@ -99,12 +99,14 @@ class MyData extends DataTableSource {
       DataCell(Text(data.id.toString())),
       // DataCell(Text(data.player.firstName)),
       DataCell(Text(data.team.name)),
-      DataCell(Text(data.ast.toString())),
-      DataCell(Text(data.blk.toString())),
-      DataCell(Text(data.turnover.toString())),
-      DataCell(Text(data.dreb.toString())),
-      DataCell(Text(data.fta.toString())),
-      DataCell(Text(data.min.toString())),
+      DataCell(Text(data.ast.toString() == 'null' ? '0' : data.ast.toString())),
+      DataCell(Text(data.blk.toString() == 'null' ? '0' : data.blk.toString())),
+      DataCell(Text(
+          data.turnover.toString() == 'null' ? '0' : data.turnover.toString())),
+      DataCell(
+          Text(data.dreb.toString() == 'null' ? '0' : data.dreb.toString())),
+      DataCell(Text(data.fta.toString() == 'null' ? '0' : data.fta.toString())),
+      DataCell(Text(data.min.toString() == 'null' ? '0' : data.min.toString())),
     ]);
   }
 

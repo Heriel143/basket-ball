@@ -29,7 +29,7 @@ class Introduction extends StatelessWidget {
           const PageDecoration(contentMargin: EdgeInsets.all(0), bodyFlex: 0),
       image: Center(
         child: Image.asset(
-          'assets/japanese-cartoonist-dai-tamura-nba-art-DesignwithRed-11-removebg-preview.png',
+          'assets/logo5.png',
           width: 500,
         ),
       ),
